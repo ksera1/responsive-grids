@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  max-width: 1000px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+/*don't understand this*/
+
+.row::before,
+.row::after {
+  display: table;
+  content: '';
+}
+
+
+/*why aren't they floating?*/
+
+.col-3 {
+  float: left;
+  padding-left: 1.04166666%;
+  padding-right: 1.04166666%;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.col-4 {
+  float: left;
+  padding-left: 1.04166666%;
+  padding-right: 1.04166666%;
+  margin-bottom: 10px;
+}
+
+.col-5 {
+  float: left;
+  padding-left: 1.04166666%;
+  padding-right: 1.04166666%;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.col-6 {
+  float: left;
+  padding-left: 1.04166666%;
+  padding-right: 1.04166666%;
+}
+
+
+/*?*/
+
+.row::after {
+  clear: both;
+}
+
+
+/*I made them 25% b/c they dont float*/
+
+.orange {
+  background-color: orange;
+  height: 200px;
+  padding-top: 10px;
+}
+
+.blue {
+  background-color: blue;
+  color: white;
+    height: 200px;
+  padding-top: 10px;
+}
+
+.green {
+  background-color: green;
+    height: 200px;
+  padding-top: 10px;
+}
+
+.black {
+  background-color: black;
+  color: white;
+    height: 200px;
+  padding-top: 10px;
+}
+
+
+/* Mobile defaults -- pls explain */
+
+
+/* Non-mobile, grid */
+
+@media only screen and (min-width: 640px) {
+  /* 3 columns, 3/12 in % */
+  .col-3 {
+    min-width: 25%;
+  }
+  /* 4 columns */
+  .col-4 {
+    width: 33.33%;
+  }
+  /* 6 columns */
+  .col-5 {
+    min-width: 50%;
+  }
+  /* 12 columns */
+  .col-6 {
+    min-width: 100%;
+  }
+}
+
+.purple {
+  background-color: purple;
+    height: 200px;
+  padding-top: 10px;
+}
+
+.red {
+  background-color: red;
+    height: 200px;
+  padding-top: 10px;
+}
+
+.brown {
+  background-color: brown;
+    height: 200px;
+  padding-top: 10px;
+}
+
+.pink {
+  background-color: pink;
+    height: 200px;
+  padding-top: 10px;
+}
+
+.aqua {
+  background-color: aqua;
+    height: 200px;
+  padding-top: 10px;
+}
+
+.slate {
+  background-color: deepskyblue;
+    height: 200px;
+  padding-top: 10px;
+}
+
+body {
+    height: 200px;
+  padding-top: 10px;
+}
+
